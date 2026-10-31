@@ -1,0 +1,6 @@
+{
+  "name": "ACM Coding Contest Leaderboard",
+  "description": "Official ACM Student Chapter real-time competitive programming leaderboard, problem analytics, and performance dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

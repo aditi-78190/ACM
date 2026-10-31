@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+:root {
+  --navy-950: #07111e;
+  --navy-900: #0a192f;
+  --navy-850: #0f2444;
+  --navy-800: #172d54;
+  --navy-700: #233e6f;
+  --navy-border: #1e355b;
+  
+  --canvas-bg: #f8fafc;
+  --card-bg: #ffffff;
+  --card-border: #e2e8f0;
+  --card-hover: #f1f5f9;
+  
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+  
+  --cyan-500: #0284c7;
+  --cyan-600: #0369a1;
+  --cyan-50: #f0f9ff;
+  --cyan-100: #e0f2fe;
+  
+  --emerald-500: #10b981;
+  --emerald-600: #059669;
+  --amber-500: #f59e0b;
+  --amber-600: #d97706;
+  --rose-500: #ef4444;
+  --rose-600: #dc2626;
+
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--canvas-bg);
+  color: var(--text-primary);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+/* Tabular Numerals for metrics, rankings, scores, and timestamps */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+/* Custom modern scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Subtle transitions for buttons and cards */
+.interactive-card {
+  transition: transform 0.15s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.15s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.15s ease;
+}
+.interactive-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px -4px rgba(10, 25, 47, 0.08);
+}
